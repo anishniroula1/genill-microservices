@@ -1,4 +1,4 @@
-package com.javasampleapproach.springrest.postgresql;
+package com.genill.central.docs;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringRestPostgreSqlApplicationTests {
+public class DocumentationAppApplicationTests {
 
 	@Test
 	public void contextLoads() {

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="documentation-apps" />
         <module name="users-profile" />
         <module name="config-server" />
         <module name="authentication" />
@@ -20,6 +21,7 @@
       <module name="authentication (1)" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="discovery-server" target="1.8" />
+      <module name="documentation-apps" target="1.8" />
       <module name="genill-microservices" target="1.5" />
       <module name="profileforusers" target="1.8" />
       <module name="users-profile" target="1.8" />
@@ -32,6 +34,7 @@
       <module name="authentication (1)" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
+      <module name="documentation-apps" options="-parameters" />
       <module name="profileforusers" options="-parameters" />
       <module name="users-profile" options="-parameters" />
       <module name="zuulservice" options="-parameters" />

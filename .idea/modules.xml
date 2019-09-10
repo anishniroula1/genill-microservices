@@ -3,10 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/authentication/authentication.iml" filepath="$PROJECT_DIR$/authentication/authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users-profile/authentication (1).iml" filepath="$PROJECT_DIR$/users-profile/authentication (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery-server/discovery-server.iml" filepath="$PROJECT_DIR$/discovery-server/discovery-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/genill-microservices.iml" filepath="$PROJECT_DIR$/genill-microservices.iml" />
       <module fileurl="file://$PROJECT_DIR$/profileforusers/profileforusers.iml" filepath="$PROJECT_DIR$/profileforusers/profileforusers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users-profile/users-profile.iml" filepath="$PROJECT_DIR$/users-profile/users-profile.iml" />
       <module fileurl="file://$PROJECT_DIR$/zuulservice/zuulservice.iml" filepath="$PROJECT_DIR$/zuulservice/zuulservice.iml" />
     </modules>
   </component>

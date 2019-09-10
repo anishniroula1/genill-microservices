@@ -17,6 +17,7 @@
 		<module>discovery-server</module>
 		<module>authentication</module>
 		<module>zuulservice</module>
+		<module>users-profile</module>
 	</modules>
 
 

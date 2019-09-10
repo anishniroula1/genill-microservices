@@ -8,7 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-server" />
         <module name="authentication" />
-        <module name="user-profile" />
+        <module name="profileforusers" />
         <module name="discovery-server" />
         <module name="zuulservice" />
       </profile>
@@ -18,7 +18,7 @@
       <module name="config-server" target="1.8" />
       <module name="discovery-server" target="1.8" />
       <module name="genill-microservices" target="1.5" />
-      <module name="user-profile" target="1.8" />
+      <module name="profileforusers" target="1.8" />
       <module name="zuulservice" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -27,7 +27,7 @@
       <module name="authentication" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="discovery-server" options="-parameters" />
-      <module name="user-profile" options="-parameters" />
+      <module name="profileforusers" options="-parameters" />
       <module name="zuulservice" options="-parameters" />
     </option>
   </component>

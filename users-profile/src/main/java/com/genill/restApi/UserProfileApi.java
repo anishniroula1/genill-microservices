@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.springframework.http.HttpStatus;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,35 +34,35 @@ public class UserProfileApi {
 	private ProfileRepository repo;
 	
 	@GetMapping("{username}/checkusername")
-	public String checkUserExist(@PathVariable String username) {
+	public ResponseEntity<String> checkUserExist(@PathVariable String username) {
 		try {
 		Users user = profileService.checkUsernameExist(username);
 		if(user != null) {
 			
-			return "Username already Exist";
+			return new ResponseEntity<>("Username already Exist", HttpStatus.FORBIDDEN);
 		}
 		} catch(NullPointerException e) {
 		
 	}
-		return "Username is available to register";
+		return new ResponseEntity<>("Username is available to register", HttpStatus.OK);
 	}
 	
 	@GetMapping("{email}/checkemail")
-	public String checkUserEmailExist(@PathVariable String email) {
+	public ResponseEntity<String> checkUserEmailExist(@PathVariable String email) {
 		try {
 			if (!email.contains("@")) {
-				return "Please Enter Valid Email";
+				return new ResponseEntity<>("Please Enter Valid Email", HttpStatus.BAD_REQUEST);
 			} else if (profileService.checkUserByEmail(email) != null) {
-				return "Email already Exist, Please login Using your email Address";
+				return new ResponseEntity<>("Email already Exist, Please login Using your email Address", HttpStatus.FORBIDDEN);
 			}
 		} catch(NullPointerException e) {
 			
 		}
-		return "Email is available to register";
+		return new ResponseEntity<>("Email is available to register", HttpStatus.OK);
 		
 	}
 	
-	@GetMapping("/users/{username}")
+	@GetMapping("/username/{username}")
 	public Object usersCheck(@PathVariable String username) {
 	
 		Users user = profileService.checkUsernameExist(username);

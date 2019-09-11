@@ -1,9 +1,7 @@
-package com.genill.aaConfig;
+package com.genill.swaggerConfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
@@ -19,12 +17,15 @@ public class SwaggerConfig {
     @Bean
     public Docket swaggerConfiguration() {
 
-        return new Docket(DocumentationType.SWAGGER_2)
+        return new Docket(DocumentationType.SWAGGER_2).select()
+                .apis(RequestHandlerSelectors.basePackage("com.genill")).build()
+                .apiInfo(apiDetails());
+        /*return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .paths(PathSelectors.ant("/genill/api/*"))
                 .apis(RequestHandlerSelectors.basePackage("com.genill"))
                 .build()
-                .apiInfo(apiDetails());
+                .apiInfo(apiDetails());*/
     }
 
     private ApiInfo apiDetails() {

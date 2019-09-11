@@ -18,11 +18,8 @@ public class SwaggerConfig {
     @Bean
     public Docket swaggerConfiguration() {
 
-        return new Docket(DocumentationType.SWAGGER_2)
-                .select()
-                .paths(PathSelectors.ant("/genill/api/*"))
-                .apis(RequestHandlerSelectors.basePackage("com.genill"))
-                .build()
+        return new Docket(DocumentationType.SWAGGER_2).select()
+                .apis(RequestHandlerSelectors.basePackage("com.genill")).build()
                 .apiInfo(apiDetails());
     }
 

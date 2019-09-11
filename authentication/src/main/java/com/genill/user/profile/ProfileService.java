@@ -1,10 +1,9 @@
 package com.genill.user.profile;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.genill.exception.ResourceNotFoundException;
 import com.genill.users.Users;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 @Service
 public class ProfileService {

@@ -18,7 +18,6 @@
 		<module>authentication</module>
 		<module>zuulservice</module>
 		<module>users-profile</module>
-		<module>documentation-app</module>
 	</modules>
 
 
